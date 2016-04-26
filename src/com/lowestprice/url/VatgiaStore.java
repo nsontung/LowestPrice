@@ -31,17 +31,17 @@ public class VatgiaStore extends Store {
     }
 
     @Override
-    public String getItemNamePattern() {
+    public String getItemNameDiv() {
         return "div.name a";
     }
 
     @Override
-    public String getItemLinkPattern() {
+    public String getItemLinkDiv() {
         return "div.name a";
     }
 
     @Override
-    public String getItemPricePattern() {
+    public String getItemPriceDiv() {
         return "div.price";
     }
 
@@ -66,9 +66,9 @@ public class VatgiaStore extends Store {
 //
 //                Item item = new Item();
 //
-//                item.name = allItems.get(i).select(getItemLinkPattern()).text();
-//                item.link = baseUrl + allItems.get(i).select(getItemLinkPattern()).first().attr("href");
-//                String price = allItems.get(i).select(getItemPricePattern()).text().replaceAll("\\D+", "");
+//                item.name = allItems.get(i).select(getItemLinkDiv()).text();
+//                item.link = baseUrl + allItems.get(i).select(getItemLinkDiv()).first().attr("href");
+//                String price = allItems.get(i).select(getItemPriceDiv()).text().replaceAll("\\D+", "");
 //                try {
 //                    item.price = Double.parseDouble(price);
 //                } catch(Exception ex){

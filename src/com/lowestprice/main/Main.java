@@ -16,6 +16,8 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by tungns on 4/21/16.
@@ -26,12 +28,20 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+        String name = "Hello123xxx";
 
-        List<Item> results = SearchEngine.getInstance().search("iphone 5s");
+        Pattern p = Pattern.compile("\\w+\\d{3}");
 
-        for(Item i : results){
-            Item.print(i);
+        Matcher matcher = p.matcher(name);
+        if(matcher.find()){
+            System.out.println(matcher.group());
         }
+
+//        List<Item> results = SearchEngine.getInstance().search("iphone 5s");
+//
+//        for(Item i : results){
+//            Item.print(i);
+//        }
 
 
 

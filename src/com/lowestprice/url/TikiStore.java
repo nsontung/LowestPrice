@@ -30,17 +30,17 @@ public class TikiStore extends Store {
     }
 
     @Override
-    public String getItemNamePattern() {
+    public String getItemNameDiv() {
         return  "span.title";
     }
 
     @Override
-    public String getItemLinkPattern() {
+    public String getItemLinkDiv() {
         return "a";
     }
 
     @Override
-    public String getItemPricePattern() {
+    public String getItemPriceDiv() {
         return  "p.price-sale";
     }
 

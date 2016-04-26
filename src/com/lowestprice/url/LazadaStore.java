@@ -32,17 +32,17 @@ public class LazadaStore extends Store {
     }
 
     @Override
-    public String getItemNamePattern() {
+    public String getItemNameDiv() {
         return "div.product-card__name-wrap";
     }
 
     @Override
-    public String getItemLinkPattern() {
+    public String getItemLinkDiv() {
         return "a";
     }
 
     @Override
-    public String getItemPricePattern() {
+    public String getItemPriceDiv() {
         return "div.product-card__price";
     }
 
